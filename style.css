@@ -2,26 +2,86 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Grand Hotel", cursive;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
 }
 
 body {
     background-color: #ff9393;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 350px 0;
+    
+    h1 {
+        font-size: 5rem;
+    }
+
+    img {
+        height: 250px;
+        max-width: 90%;
+        object-fit: contain;
+    }
+}
+
+.carrousel-apresentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 50px 0;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 350px;
+    font-size: 3rem;
+    position: sticky;
+    top: 0;
+    color: #ff5555;
+    background-color: #ff9393;
+    text-align: center;
+    
+    p {
+        padding: 350px 0;
+        line-height: 1.4;
+    }
 }
 
 .carrousel-div {
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    width: 100%;
+    padding: 0 15px;
+    background-color: #ff9393;
+    
     .card {
         background-color: #fff;
-        padding: 20px 20px 50px 20px;
+        padding: 15px 15px 50px 15px;
         position: sticky;
         top: 0;
-
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 350px;
+        
         img {
-            height: 100%;
             object-fit: cover;
-            height: 270px;
+            height: 250px;
+            width: 100%;
         }
     }
 }
