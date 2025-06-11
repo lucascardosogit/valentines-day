@@ -23,7 +23,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* padding: 350px 0; */
     
     h1 {
         font-size: 5rem;
@@ -83,6 +82,14 @@ body {
             object-fit: cover;
             height: 250px;
             width: 100%;
+        }
+
+        #carnaval {
+            object-position: center 30%;
+        }
+
+        #passeio {
+            object-position: center 40%;
         }
     }
 }
